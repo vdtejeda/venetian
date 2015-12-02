@@ -70,7 +70,7 @@
         <section id="home" class="no-padding">
             <div class="owl-slider-full owl-carousel owl-theme light-pagination square-pagination dark-pagination-without-next-prev-arrow main-slider">
                 <!-- slider item -->
-                <div class="item owl-bg-img" style="background-image: url('../images/photos/IMG_1803.jpg');">
+                <div class="item owl-bg-img" style="background-image: url('../images/photos/IMG_0568.jpg');">
                     <div class="opacity-medium bg-dark-gray"></div>
                     <div class="container full-screen position-relative">
                         <div class="col-md-12 slider-typography text-left">
@@ -81,7 +81,7 @@
                                     </div>
                                     <div class="col-md-11 no-padding">
                                         <p class="white-text text-uppercase letter-spacing-2 light-gray-text alt-font margin-four no-margin-lr no-margin-top"> High quality services</p>
-                                        <span class="white-text font-weight-800 letter-spacing-3 alt-font text-uppercase xs-title-large">Exclusive <br> Banquet <br>Hall</span>
+                                        <span class="white-text font-weight-800 letter-spacing-3 alt-font text-uppercase xs-title-large">Venetian <br> Banquet <br>Hall</span>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                 </div>
                 <!-- end slider item -->
                 <!-- slider item -->
-                <div class="item owl-bg-img" style="background-image:url('http://placehold.it/1920x1050');">
+                <div class="item owl-bg-img" style="background-image:url('../images/photos/IMG_1803.jpg');">
                     <div class="opacity-medium bg-dark-gray"></div>
                     <div class="container full-screen position-relative">
                         <div class="col-md-12 slider-typography text-left">
@@ -100,8 +100,8 @@
                                         <div class="bg-fast-pink separator-line-medium-thick"></div>
                                     </div>
                                     <div class="col-md-11 no-padding">
-                                        <p class="white-text text-uppercase letter-spacing-2 light-gray-text alt-font margin-four no-margin-lr no-margin-top">Enjoy the soothing experience!</p>
-                                        <span class="white-text font-weight-800 letter-spacing-3 alt-font text-uppercase xs-title-extra-large">Essence<br> of Natural<br> beauty</span>
+                                        <p class="white-text text-uppercase letter-spacing-2 light-gray-text alt-font margin-four no-margin-lr no-margin-top">Come experience our baunquet hall!</p>
+                                        <span class="white-text font-weight-800 letter-spacing-3 alt-font text-uppercase xs-title-extra-large">Perfect<br> for any<br> event</span>
                                     </div>
                                 </div>
                             </div>
@@ -317,6 +317,17 @@
         <!-- menu section -->
           <section id="menu" class="no-padding">
               <div class="container-fluid">
+                <div class="row padding-six no-padding-lr no-padding-bottom border-top">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">03</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Menu</span>
+                    </div>
+                    <div class="margin-ten no-margin-lr xs-text-center clearfix">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <p class="width-40 center-col sm-width-70  xs-width-100">Our menus are complete meals featuring a variety of meats, vegetables and rices that will satisfy any taste.</p>
+                        </div>
+                    </div>
+                </div>
                   <div class="row no-margin">
                       <div class="col-md-4 col-sm-12 restaurant-menu position-relative overflow-hidden xs-no-padding">
                           <!-- menu image and title -->
@@ -782,16 +793,26 @@
                     </div>
                     <!-- end text -->
                     <div class="col-md-7 col-sm-12 margin-nine no-margin-bottom no-margin-lr position-relative">
-                        <form id="spacontactform" action="javascript:void(0)" method="post">
-                            <div id="success" class="no-margin-lr"></div>
+                        <p class="alt-font">
+                          <%= flash[:notice] %>
+                        </p>
+                        <%= form_for @message, url: root_path do |f| %>
+                          <%= f.text_field :name, placeholder: "Name", class: "big-input alt-font" %>
+                          <%= f.email_field :email, placeholder: "Email", class: "big-input alt-font"%>
+                          <%= f.telephone_field :phone, class: "big-input alt-font"%>
+                          <%= f.text_area :content, placeholder: "Message", class: "big-input alt-font"%>
+                          <%= f.submit "Submit" , class: "highlight-button-dark btn btn-medium" %>
+                          <% end %>
+                        <!-- <form id="spacontactform" action="javascript:void(0)" method="post">
+                            <div id="success" class="no-margin-lr"></div> -->
                             <!-- input -->
-                            <input type="text" class="big-input alt-font" placeholder="* YOUR NAME" name="name" id="name">
+                            <!-- <input type="text" class="big-input alt-font" placeholder="* YOUR NAME" name="name" id="name"> -->
                             <!-- end input -->
                             <!-- input  -->
-                            <input type="text" class="big-input alt-font" placeholder="* YOUR EMAIL" name="email" id="email">
+                            <!-- <input type="text" class="big-input alt-font" placeholder="* YOUR EMAIL" name="email" id="email"> -->
                             <!-- end input -->
                             <!-- dropdown  -->
-                            <div class="select-style big-select alt-font">
+                            <!-- <div class="select-style big-select alt-font">
                                 <select id="interestedin" name="interestedin">
                                     <option selected="">WHAT ARE YOU INTERESTED IN?</option>
                                     <option value="Fairness Treatment">Fairness Treatment</option>
@@ -800,15 +821,15 @@
                                     <option value="Aromatherapy Treatment">Aromatherapy Treatment</option>
                                     <option value="Other">Other</option>
                                 </select>
-                            </div>
+                            </div> -->
                             <!-- end dropdown  -->
                             <!-- textarea  -->
-                            <textarea class="big-input alt-font" placeholder="YOUR MESSAGE" name="comment" id="comment"></textarea>
+                            <!-- <textarea class="big-input alt-font" placeholder="YOUR MESSAGE" name="comment" id="comment"></textarea> -->
                             <!-- end textarea  -->
                             <!-- button  -->
-                            <button id="spa-contact-button" class="highlight-button-dark btn btn-medium" type="submit">Submit</button>
+                            <!-- <button id="spa-contact-button" class="highlight-button-dark btn btn-medium" type="submit">Submit</button> -->
                             <!-- end button  -->
-                        </form>
+                        <!-- </form> -->
                     </div>
                 </div>
             </div>

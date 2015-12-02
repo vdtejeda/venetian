@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
+  post '/', to: 'messages#create'
   get '/contact' => 'pages#contact'
   get '/location' => 'pages#location'
   get '/menu' => 'pages#menu'
