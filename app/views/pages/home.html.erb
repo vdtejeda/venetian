@@ -66,6 +66,12 @@
             </div>
         </nav>
         <!-- end navigation -->
+          <% flash.each do |key, value| %>
+            <div class="alert alert-<%= key %>">
+              <%= value %>
+            </div>
+          <% end %>
+
         <!-- slider -->
         <section id="home" class="no-padding">
             <div class="owl-slider-full owl-carousel owl-theme light-pagination square-pagination dark-pagination-without-next-prev-arrow main-slider">
@@ -110,7 +116,7 @@
                 </div>
                 <!-- end slider item -->
                 <!-- slider item -->
-                <div class="item owl-bg-img" style="background-image:url('http://placehold.it/1920x1050');">
+                <div class="item owl-bg-img" style="background-image:url('../images/photos/DSC_0022.jpg');">
                     <div class="opacity-medium bg-dark-gray"></div>
                     <div class="container full-screen position-relative">
                         <div class="col-md-12 slider-typography text-left">
@@ -631,9 +637,9 @@
                                 <!-- gallery item -->
                                 <li>
                                     <figure class="overflow-hidden">
-                                        <div class="gallery-img bg-dark-gray"><a href="/images/photos/027.jpg" title="Yoga and Meditation"><img src="/images/photos/027.jpg" alt=""></a></div>
+                                        <div class="gallery-img bg-dark-gray"><a href="/images/photos/027.jpg" title="Great for any event"><img src="/images/photos/027.jpg" alt=""></a></div>
                                         <figcaption>
-                                            <h3 class="alt-font text-uppercase letter-spacing-2">Yoga and<br> Meditation</h3>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2">Great for <br> any event</h3>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -641,9 +647,9 @@
                                 <!-- gallery item -->
                                 <li>
                                     <figure class="overflow-hidden">
-                                        <div class="gallery-img bg-dark-gray"><a href="/images/photos/DSC_0040.jpg" title="Fitness and Activities"><img src="/images/photos/DSC_0040.jpg" alt=""></a></div>
+                                        <div class="gallery-img bg-dark-gray"><a href="/images/photos/DSC_0040.jpg" title="Banquet Hall"><img src="/images/photos/DSC_0040.jpg" alt=""></a></div>
                                         <figcaption>
-                                            <h3 class="alt-font text-uppercase letter-spacing-2">Fitness and<br> Activities</h3>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2">Banquet<br> Hall</h3>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -651,9 +657,9 @@
                                 <!-- gallery item -->
                                 <li>
                                     <figure class="overflow-hidden">
-                                        <div class="gallery-img bg-dark-gray"><a href="/images/photos/DSC_1024.jpg" title="Spa Therapy Treatments"><img src="/images/photos/DSC_1024.jpg" alt=""></a></div>
+                                        <div class="gallery-img bg-dark-gray"><a href="/images/photos/DSC_1024.jpg" title="Great for any event"><img src="/images/photos/DSC_1024.jpg" alt=""></a></div>
                                         <figcaption>
-                                            <h3 class="alt-font text-uppercase letter-spacing-2">Spa Therapy<br> Treatments</h3>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2">Great for <br> any event</h3>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -661,9 +667,9 @@
                                 <!-- gallery item -->
                                 <li>
                                     <figure class="overflow-hidden">
-                                        <div class="gallery-img bg-dark-gray"><a href="/images/photos/DSC_1061.jpg" title="Ayurvedic Treatments"><img src="/images/photos/DSC_1061.jpg" alt=""></a></div>
+                                        <div class="gallery-img bg-dark-gray"><a href="/images/photos/DSC_1061.jpg" title="Banquet Hall"><img src="/images/photos/DSC_1061.jpg" alt=""></a></div>
                                         <figcaption>
-                                            <h3 class="alt-font text-uppercase letter-spacing-2">Ayurvedic<br> Treatments</h3>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2">Banquet<br> Hall</h3>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -671,9 +677,9 @@
                                 <!-- gallery item -->
                                 <li>
                                     <figure class="overflow-hidden">
-                                        <div class="gallery-img bg-dark-gray"><a href="images/photos/IMG_1803.jpg" title="Ayurvedic Yoga Therapy"><img src="images/photos/IMG_1803.jpg" alt=""></a></div>
+                                        <div class="gallery-img bg-dark-gray"><a href="images/photos/IMG_1803.jpg" title="Great for any event"><img src="images/photos/IMG_1803.jpg" alt=""></a></div>
                                         <figcaption>
-                                            <h3 class="alt-font text-uppercase letter-spacing-2">Ayurvedic<br> Yoga Therapy</h3>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2">Great for <br> any event</h3>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -681,9 +687,9 @@
                                 <!-- gallery item -->
                                 <li>
                                     <figure class="overflow-hidden">
-                                        <div class="gallery-img bg-dark-gray"><a href="images/photos/PictureTest118.jpg" title="Sacred Garden Facial"><img src="images/photos/PictureTest118.jpg" alt=""></a></div>
+                                        <div class="gallery-img bg-dark-gray"><a href="images/photos/PictureTest118.jpg" title="Banquet Hall"><img src="images/photos/PictureTest118.jpg" alt=""></a></div>
                                         <figcaption>
-                                            <h3 class="alt-font text-uppercase letter-spacing-2">Sacred<br> Garden Facial</h3>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2">Banquet<br> Hall</h3>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -691,9 +697,9 @@
                                 <!-- gallery item -->
                                 <li>
                                     <figure class="overflow-hidden">
-                                        <div class="gallery-img bg-dark-gray"><a href="images/egypt.png" title="Heart Forward Spa"><img src="images/egypt.png" alt=""></a></div>
+                                        <div class="gallery-img bg-dark-gray"><a href="images/egypt.png" title="Great for any event"><img src="images/egypt.png" alt=""></a></div>
                                         <figcaption>
-                                            <h3 class="alt-font text-uppercase letter-spacing-2">Heart<br> Forward Spa</h3>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2">Great for <br> any event</h3>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -701,9 +707,9 @@
                                 <!-- gallery item -->
                                 <li>
                                     <figure class="overflow-hidden">
-                                        <div class="gallery-img bg-dark-gray"><a href="images/flowers2.png" title="Mountain Beauty Spa"><img src="images/flowers2.png" alt=""></a></div>
+                                        <div class="gallery-img bg-dark-gray"><a href="images/flowers2.png" title="Flowers"><img src="images/flowers2.png" alt=""></a></div>
                                         <figcaption>
-                                            <h3 class="alt-font text-uppercase letter-spacing-2">Mountain<br> Beauty Spa</h3>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2">Flowers</h3>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -711,9 +717,9 @@
                                 <!-- gallery item -->
                                 <li>
                                     <figure class="overflow-hidden">
-                                        <div class="gallery-img bg-dark-gray"><a href="images/cake.png" title="Aromatherapy Treatment"><img src="images/cake.png" alt=""></a></div>
+                                        <div class="gallery-img bg-dark-gray"><a href="images/cake.png" title="Cake"><img src="images/cake.png" alt=""></a></div>
                                         <figcaption>
-                                            <h3 class="alt-font text-uppercase letter-spacing-2">Aromatherapy<br> Treatment</h3>
+                                            <h3 class="alt-font text-uppercase letter-spacing-2">Cake</h3>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -792,17 +798,11 @@
                         </div>
                     </div>
                     <!-- end text -->
-                    <div class="col-md-7 col-sm-12 margin-nine no-margin-bottom no-margin-lr position-relative">
+                    <div class="col-md-7 col-sm-12 margin-nine no-margin-bottom no-margin-lr position-relative ajax">
                         <p class="alt-font">
                           <%= flash[:notice] %>
                         </p>
-                        <%= form_for @message, url: root_path do |f| %>
-                          <%= f.text_field :name, placeholder: "Name", class: "big-input alt-font" %>
-                          <%= f.email_field :email, placeholder: "Email", class: "big-input alt-font"%>
-                          <%= f.telephone_field :phone, class: "big-input alt-font"%>
-                          <%= f.text_area :content, placeholder: "Message", class: "big-input alt-font"%>
-                          <%= f.submit "Submit" , class: "highlight-button-dark btn btn-medium" %>
-                          <% end %>
+                        <%= render 'form' %>
                         <!-- <form id="spacontactform" action="javascript:void(0)" method="post">
                             <div id="success" class="no-margin-lr"></div> -->
                             <!-- input -->

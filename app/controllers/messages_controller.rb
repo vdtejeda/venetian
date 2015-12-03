@@ -8,8 +8,8 @@ class MessagesController < ApplicationController
 
      if @message.valid?
        MessageMailer.new_message(@message).deliver_now
-       flash[:notice] = "Your messages has been sent."
-       redirect_to root_path
+       flash[:success] = "Your message has been sent."
+       redirect_to '/'
      else
        flash[:alert] = "An error occurred while delivering this message."
        render 'pages/home'

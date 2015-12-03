@@ -1,13 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#home'
   post '/', to: 'messages#create'
-  get '/contact' => 'pages#contact'
-  get '/location' => 'pages#location'
-  get '/menu' => 'pages#menu'
-  get '/photo-gallery' => 'pages#photo-gallery'
-  get '/services' => 'pages#services'
-
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

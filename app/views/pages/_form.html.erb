@@ -1,0 +1,7 @@
+<%= form_for @message, url: root_path do |f| %>
+  <%= f.text_field :name, placeholder: "Name", class: "big-input alt-font" %>
+  <%= f.email_field :email, placeholder: "Email", class: "big-input alt-font"%>
+  <%= f.telephone_field :phone, class: "big-input alt-font"%>
+  <%= f.text_area :content, placeholder: "Message", class: "big-input alt-font"%>
+  <%= f.submit "Submit" , class: "highlight-button-dark btn btn-medium" %>
+  <% end %>
