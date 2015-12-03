@@ -11,7 +11,6 @@ class MessagesController < ApplicationController
        flash[:success] = "Your message has been sent."
        redirect_to '/'
      else
-       flash[:alert] = "An error occurred while delivering this message."
        render 'pages/home'
      end
    end

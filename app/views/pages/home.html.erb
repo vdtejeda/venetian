@@ -40,6 +40,11 @@
     <body>
         <!-- navigation -->
         <nav class="navbar no-margin-bottom alt-font without-button">
+          <% flash.each do |key, value| %>
+            <div class="alert alert-<%= key %>" id="alert-override">
+              <%= value %>
+            </div>
+          <% end %>
             <div class="container navigation-menu">
                 <div class="row">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -66,11 +71,7 @@
             </div>
         </nav>
         <!-- end navigation -->
-          <% flash.each do |key, value| %>
-            <div class="alert alert-<%= key %>">
-              <%= value %>
-            </div>
-          <% end %>
+
 
         <!-- slider -->
         <section id="home" class="no-padding">
@@ -173,7 +174,7 @@
                             </div>
                             <!-- end tab item -->
                             <!-- tab item -->
-                            <div role="tabpanel" class="tab-pane fade" id="social-event">
+                            <!-- <div role="tabpanel" class="tab-pane fade" id="social-event">
                                 <div class="col-md-12 col-sm-12 treatments-box position-relative">
                                     <div class="col-md-4 col-sm-6 treatments-box-img text-right xs-display-none">
                                         <img src="http://placehold.it/850x1053" alt="" class="position-right"/>
@@ -190,10 +191,10 @@
                                         <img src="http://placehold.it/850x1053" alt="" class="position-left"/>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- end tab item -->
                             <!-- tab item -->
-                            <div role="tabpanel" class="tab-pane fade" id="corporate-events">
+                            <!-- <div role="tabpanel" class="tab-pane fade" id="corporate-events">
                                 <div class="col-md-12 col-sm-12 treatments-box position-relative">
                                     <div class="col-md-4 col-sm-6 treatments-box-img text-right xs-display-none">
                                         <img src="http://placehold.it/850x1053" alt="" class="position-right"/>
@@ -210,14 +211,14 @@
                                         <img src="http://placehold.it/850x1053" alt="" class="position-left"/>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- end tab item -->
                         </div>
                         <!-- tab list -->
                         <ul class="nav nav-tabs alt-font text-uppercase letter-spacing-1 no-border text-center margin-fifteen no-margin-lr no-margin-bottom xs-margin-thirty-five xs-no-margin-lr xs-no-margin-bottom" role="tablist">
                             <li role="presentation" class="active xs-display-block xs-no-margin"><a href="#banquet" aria-controls="Banquet Hall" role="tab" data-toggle="tab" class="xs-display-block">Banquet Hall</a></li>
-                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#social-event" aria-controls="Social Events" role="tab" data-toggle="tab" class="xs-display-block">Social Events</a></li>
-                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#corporate-events" aria-controls="massage" role="tab" data-toggle="tab" class="xs-display-block">Corporate Events</a></li>
+                            <!-- <li role="presentation" class="xs-display-block xs-no-margin"><a href="#social-event" aria-controls="Social Events" role="tab" data-toggle="tab" class="xs-display-block">Social Events</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#corporate-events" aria-controls="massage" role="tab" data-toggle="tab" class="xs-display-block">Corporate Events</a></li> -->
                         </ul>
                         <!-- end tab list -->
                     </div>
@@ -799,10 +800,7 @@
                     </div>
                     <!-- end text -->
                     <div class="col-md-7 col-sm-12 margin-nine no-margin-bottom no-margin-lr position-relative ajax">
-                        <p class="alt-font">
-                          <%= flash[:notice] %>
-                        </p>
-                        <%= render 'form' %>
+                        <%= render 'pages/form' %>
                         <!-- <form id="spacontactform" action="javascript:void(0)" method="post">
                             <div id="success" class="no-margin-lr"></div> -->
                             <!-- input -->

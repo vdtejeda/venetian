@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+#alert-override {
+  margin-bottom: 0px;
+  z-index: 1000;
+}

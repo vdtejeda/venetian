@@ -1,7 +1,22 @@
 <%= form_for @message, url: root_path do |f| %>
-  <%= f.text_field :name, placeholder: "Name", class: "big-input alt-font" %>
-  <%= f.email_field :email, placeholder: "Email", class: "big-input alt-font"%>
-  <%= f.telephone_field :phone, class: "big-input alt-font"%>
-  <%= f.text_area :content, placeholder: "Message", class: "big-input alt-font"%>
-  <%= f.submit "Submit" , class: "highlight-button-dark btn btn-medium" %>
+  <% if @message.errors.any? %>
+   <div>
+     <h6 id="error_explanation"><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+     <!-- <ul> -->
+     <!-- <% @message.errors.full_messages.each do |msg| %>
+       <li><%# msg %></li> -->
+     <% end %>
+     <!-- </ul> -->
+   </div>
+  <% end %>
+  <%= error_message_for(@message, :name, :prepend_text => '') %>
+  <%= f.text_field :name, placeholder: "Name", class: "big-input alt-font form-control has-error" %>
+  <%= error_message_for(@message, :email, :prepend_text => '') %>
+  <%= f.email_field :email, placeholder: "Email", class: "big-input alt-font form-control has-error"%>
+  <%= error_message_for(@message, :phone, :prepend_text => '') %>
+  <%= f.telephone_field :phone, class: "big-input alt-font form-control", placeholder: "Phone Number"%>
+  <%= error_message_for(@message, :content, :prepend_text => '') %>
+  <%= f.text_area :content, placeholder: "Message", class: "big-input alt-font form-control has-error"%>
+  <%= f.submit "Submit" , class: "highlight-button-dark btn btn-medium form-control has-error", id: "submit"%>
   <% end %>

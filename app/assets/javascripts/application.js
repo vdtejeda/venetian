@@ -16,7 +16,7 @@
 //= require_tree .
 
 $(document).on('ready page:load', function(event) {
-  // $("input[type=submit]").on('click', function(){
-  //   $('#new_message').after('<div></div>');
-  // });
+  setTimeout(function() {
+    $('#alert-override').slideUp();
+  }, 5000);
 });
