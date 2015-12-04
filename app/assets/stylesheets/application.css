@@ -22,3 +22,13 @@
   border: 2px solid #a94442;
   color: black;
 }*/
+.crema {
+  color: rgb(215, 181, 137);
+}
+#menu-venetian, #menu-venetian:active {
+  color: #5EB5FF;
+}
+
+#menu-venetian:hover {
+  color: #0272D2;
+}

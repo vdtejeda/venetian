@@ -56,12 +56,14 @@ Table of contents
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 
 /* ===================================
     Reset
 ====================================== */
 
-body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:13px; color:#626262; line-height:23px; letter-spacing: 0.02em }
+body{ font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased;  font-smoothing: antialiased; font-size:13px; color:#626262; line-height:23px; letter-spacing: 0.02em; background-color: rgba(215, 181, 137, 0.51);}
 a, a:active{ color: #626262; text-decoration: none; }
 a:hover, a:focus{ color: #272727;  text-decoration: none}
 a:focus {outline: none !important; }
@@ -210,6 +212,7 @@ a.light-gray-text:hover { color: #7f7f7f !important}
 /* font family */
 .alt-font {font-family: 'Montserrat', sans-serif !important;}
 .main-font {font-family: 'Roboto', sans-serif !important;}
+.title-font {font-family: 'Courgette', cursive !important;}
 
 /* ===================================
     Icon
@@ -1466,7 +1469,7 @@ footer img {max-width: 156px;}
 .menu-text-sub { -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 0; position: absolute; top: 50%;}
 .menu-item p {line-height: 20px; margin: 0 0 5px 0}
 .restaurant-menu-background { height: calc(100% - 46%); width: calc(100% - 46%); left: 23%; top: 23%;  position: absolute; background: rgba(255,255,255,1);}
-.restaurant-menu-border {  border: 6px solid rgba(0,0,0,.1); height: calc(100% - 40px); width: calc(100% - 40px); left: 20px; top: 20px;  position: absolute; }
+.restaurant-menu-border {  border: 6px solid #EAD9C2; height: calc(100% - 40px); width: calc(100% - 40px); left: 20px; top: 20px;  position: absolute; }
 .restaurant-menu-item { position: absolute; width: 100%; padding: 0 15px; top: 50%; text-align: center; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); left: 0; z-index:1 }
 .chef-bio:hover .chef-details {opacity: 1; bottom: 50px}
 .chef-details {position: absolute; opacity: 0; bottom: -250px; transition: all 400ms ease-out 0s; width: 70%; left: 15%; }
@@ -1515,7 +1518,7 @@ footer img {max-width: 156px;}
 .treatments-box{}
 .treatments-box-img {min-height: 550px;}
 .treatments-box-img img {width: 90%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); position: absolute; top: 50%;  }
-.treatments-box-text { border: 8px solid #fff; min-height: 550px;}
+.treatments-box-text { border: 8px solid #f6f6f6; min-height: 550px;}
 .treatments-box-text-sub { -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); position: absolute; top: 50%; left:0; right: 0}
 .treatments-box-text-sub img {width: 84%; top: 5px}
 .treatments-box-number { font-size: 100px; bottom: -60px;}

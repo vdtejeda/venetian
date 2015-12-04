@@ -55,7 +55,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand inner-link" href="#home"><img src="images/logo-spa.png" alt=""/></a>
+                        <!-- <a class="navbar-brand inner-link" href="#home"><img src="images/logo-spa.png" alt=""/></a> -->
                     </div>
                     <div class="col-lg-10 col-md-9 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
@@ -87,8 +87,8 @@
                                         <div class="bg-fast-pink separator-line-medium-thick"></div>
                                     </div>
                                     <div class="col-md-11 no-padding">
-                                        <p class="white-text text-uppercase letter-spacing-2 light-gray-text alt-font margin-four no-margin-lr no-margin-top"> High quality services</p>
-                                        <span class="white-text font-weight-800 letter-spacing-3 alt-font text-uppercase xs-title-large">Venetian <br> Banquet <br>Hall</span>
+                                        <p class="white-text text-uppercase letter-spacing-2 light-gray-text title-font margin-four no-margin-lr no-margin-top"> High quality services</p>
+                                        <span class="crema font-weight-800 letter-spacing-3 title-font text-uppercase xs-title-large">Venetian <br> <span class="crimson-red-text">Banquet</span><br>Hall</span>
                                     </div>
                                 </div>
                             </div>
@@ -107,8 +107,8 @@
                                         <div class="bg-fast-pink separator-line-medium-thick"></div>
                                     </div>
                                     <div class="col-md-11 no-padding">
-                                        <p class="white-text text-uppercase letter-spacing-2 light-gray-text alt-font margin-four no-margin-lr no-margin-top">Come experience our baunquet hall!</p>
-                                        <span class="white-text font-weight-800 letter-spacing-3 alt-font text-uppercase xs-title-extra-large">Perfect<br> for any<br> event</span>
+                                        <p class="white-text text-uppercase letter-spacing-2 light-gray-text title-font margin-four no-margin-lr no-margin-top">Come experience our baunquet hall!</p>
+                                        <span class="crema font-weight-800 letter-spacing-3 title-font text-uppercase xs-title-extra-large">Perfect<br><span class="crimson-red-text">for any</span><br> event</span>
                                     </div>
                                 </div>
                             </div>
@@ -127,8 +127,8 @@
                                         <div class="bg-fast-pink separator-line-medium-thick"></div>
                                     </div>
                                     <div class="col-md-11 no-padding">
-                                        <p class="white-text text-uppercase letter-spacing-2 light-gray-text alt-font margin-four no-margin-lr no-margin-top">Enjoy the soothing experience!</p>
-                                        <span class="white-text font-weight-800 letter-spacing-3 alt-font text-uppercase xs-title-extra-large">Wellness <br>of Life In <br>Nature</span>
+                                        <p class="white-text text-uppercase letter-spacing-2 light-gray-text title-font margin-four no-margin-lr no-margin-top">Conveniently</p>
+                                        <span class="crema font-weight-800 letter-spacing-3 title-font text-uppercase xs-title-extra-large">located in the<br><span class="crimson-red-text">heart of</span> <br>Miami</span>
                                     </div>
                                 </div>
                             </div>
@@ -331,16 +331,112 @@
                     </div>
                     <div class="margin-ten no-margin-lr xs-text-center clearfix">
                         <div class="col-md-12 col-sm-12 text-center">
-                            <p class="width-40 center-col sm-width-70  xs-width-100">Our menus are complete meals featuring a variety of meats, vegetables and rices that will satisfy any taste.</p>
+                            <p class="width-40 center-col sm-width-70  xs-width-100">Our menus are complete meals featuring a variety of meats, vegetables and rices that will satisfy any taste.
+                            <%= link_to 'See our full menu here.', 'images/menu-venetian.png', id:"menu-venetian" %></p>
+
                         </div>
                     </div>
                 </div>
                   <div class="row no-margin">
+                    <div class="col-md-4 col-sm-12 restaurant-menu position-relative overflow-hidden xs-no-padding">
+                        <!-- menu image and title -->
+                        <div class="restaurant-menu-image cover-background" style=" background-image: url('http://d1doqjmisr497k.cloudfront.net/~/media/Recipe-Photos/McCormick/Salads-Sides/1007x545/Roasted-Garlic-Mashed-Potatoes.ashx?vd=20130326T141915');">
+                            <div class="restaurant-menu-item z-index-1">
+                                <img src="http://solacajunseasoning.com/wp-content/uploads/2015/06/SoLa-Red-Beans-and-Rice-150x150.jpg" alt=""/>
+                                <span class="title-small font-weight-100 letter-spacing-2 alt-font deep-pink-dark-text text-uppercase display-block margin-four no-margin-lr no-margin-bottom">Side Dishes</span>
+                                <!-- <span class="text-small letter-spacing-1 text-uppercase">Every Day 13:00 - 15:00</span> -->
+                                <div class="margin-four"><img src="images/separator2.png" alt=""/></div>
+                            </div>
+                            <div class="restaurant-menu-background"><div class="restaurant-menu-border z-index-2"></div></div>
+                        </div>
+                        <!-- end menu image and title -->
+                        <!-- menu hover box -->
+                        <div class="restaurant-menu-text">
+                            <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('images/restaurant-img7.jpg');">
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
+                                    <div class="col-md-8 col-sm-8 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
+                                        <div class="menu-text-sub">
+                                            <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Mashed Potatoes</span>
+                                            <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end menu item -->
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
+                                    <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
+                                        <div class="menu-text-sub">
+                                            <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Fried Ripened Plantains</span>
+                                            <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end menu item -->
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
+                                    <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
+                                        <div class="menu-text-sub">
+                                            <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Red Beans & Rice</span>
+                                            <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end menu item -->
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
+                                    <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
+                                        <div class="menu-text-sub">
+                                            <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Golden Potatoes</span>
+                                            <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end menu item -->
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
+                                    <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
+                                        <div class="menu-text-sub">
+                                            <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top"> Pilaf Rice</span>
+                                            <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
+                                    <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
+                                        <div class="menu-text-sub">
+                                            <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top"> Mixed Vegetables (Regular)</span>
+                                            <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- menu item -->
+                                <div class="menu-item">
+                                    <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
+                                    <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
+                                        <div class="menu-text-sub">
+                                            <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Mixed Vegetables (California Style)</span>
+                                            <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end menu item -->
+                            </div>
+                        </div>
+                        <!-- end menu hover box -->
+                    </div>
                       <div class="col-md-4 col-sm-12 restaurant-menu position-relative overflow-hidden xs-no-padding">
                           <!-- menu image and title -->
-                          <div class="restaurant-menu-image cover-background" style="background-image: url('http://placehold.it/900x1200'); ">
+                          <div class="restaurant-menu-image cover-background" style="background-image: url('http://i.imgur.com/K48DLk0.png'); ">
                               <div class="restaurant-menu-item z-index-1">
-                                  <img src="http://placehold.it/150x150" alt=""/>
+                                  <img src="http://www.evolvingpartners.com.au/wp-content/uploads/2015/06/R2-26-Pork-Spare-Ribs-with-Texas-BBQ-sauce-150x150.jpg" alt=""/>
                                   <span class="title-small font-weight-100 letter-spacing-2 alt-font deep-pink-dark-text text-uppercase display-block margin-four no-margin-lr no-margin-bottom">Main Dishes</span>
                                   <!-- <span class="text-small letter-spacing-1 text-uppercase">Every Day 08:00 - 10:00</span> -->
                                   <div class="margin-four"><img src="images/separator2.png" alt=""/></div>
@@ -389,7 +485,7 @@
                                       <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
                                       <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
                                           <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Peper Chicken Steak</span>
+                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Pepper Chicken Steak</span>
                                               <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
                                           </div>
                                       </div>
@@ -400,7 +496,7 @@
                                       <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
                                       <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
                                           <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Peper Chicken Steak</span>
+                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Pepper Chicken Steak</span>
                                               <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
                                           </div>
                                       </div>
@@ -432,103 +528,9 @@
                       </div>
                       <div class="col-md-4 col-sm-12 restaurant-menu position-relative overflow-hidden xs-no-padding">
                           <!-- menu image and title -->
-                          <div class="restaurant-menu-image cover-background" style=" background-image: url('http://placehold.it/900x1200');">
+                          <div class="restaurant-menu-image  cover-background" style=" background-image: url('http://media1.sailusfood.com/wp-content/uploads/2009/06/vegetable-fried-rice.jpg');">
                               <div class="restaurant-menu-item z-index-1">
-                                  <img src="http://placehold.it/150x150" alt=""/>
-                                  <span class="title-small font-weight-100 letter-spacing-2 alt-font deep-pink-dark-text text-uppercase display-block margin-four no-margin-lr no-margin-bottom">Side Dishes</span>
-                                  <!-- <span class="text-small letter-spacing-1 text-uppercase">Every Day 13:00 - 15:00</span> -->
-                                  <div class="margin-four"><img src="images/separator2.png" alt=""/></div>
-                              </div>
-                              <div class="restaurant-menu-background"><div class="restaurant-menu-border z-index-2"></div></div>
-                          </div>
-                          <!-- end menu image and title -->
-                          <!-- menu hover box -->
-                          <div class="restaurant-menu-text">
-                              <div class="restaurant-menu-text-inner padding-thirteen sm-padding-nine" style="background-image:url('images/restaurant-img7.jpg');">
-                                  <!-- menu item -->
-                                  <div class="menu-item">
-                                      <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
-                                      <div class="col-md-8 col-sm-8 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                                          <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Mashed Potatoes</span>
-                                              <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- end menu item -->
-                                  <!-- menu item -->
-                                  <div class="menu-item">
-                                      <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
-                                      <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                                          <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Fried Ripened Plantains</span>
-                                              <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- end menu item -->
-                                  <!-- menu item -->
-                                  <div class="menu-item">
-                                      <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
-                                      <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                                          <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Red Beans & Rice</span>
-                                              <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- end menu item -->
-                                  <!-- menu item -->
-                                  <div class="menu-item">
-                                      <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
-                                      <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                                          <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Golden Potatoes</span>
-                                              <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- end menu item -->
-                                  <!-- menu item -->
-                                  <div class="menu-item">
-                                      <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
-                                      <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                                          <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top"> Pilaf Rice</span>
-                                              <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- menu item -->
-                                  <div class="menu-item">
-                                      <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
-                                      <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                                          <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top"> Mixed Vegetables (Regular)</span>
-                                              <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- menu item -->
-                                  <div class="menu-item">
-                                      <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
-                                      <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
-                                          <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Mixed Vegetables (California Style)</span>
-                                              <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <!-- end menu item -->
-                              </div>
-                          </div>
-                          <!-- end menu hover box -->
-                      </div>
-                      <div class="col-md-4 col-sm-12 restaurant-menu position-relative overflow-hidden xs-no-padding">
-                          <!-- menu image and title -->
-                          <div class="restaurant-menu-image  cover-background" style=" background-image: url('http://placehold.it/900x1200');">
-                              <div class="restaurant-menu-item z-index-1">
-                                  <img src="http://placehold.it/150x150" alt=""/>
+                                  <img src="http://www.bonappetit.com/wp-content/uploads/2007/05/mare_porcini_crusted_filet_mignon_with_fresh_herb_butter_v-150x150.jpg" alt=""/>
                                   <span class="title-small font-weight-100 letter-spacing-2 alt-font deep-pink-dark-text text-uppercase display-block margin-four no-margin-lr no-margin-bottom">Rices & <br>Special Dishes</span>
                                   <!-- <span class="text-small letter-spacing-1 text-uppercase">Every Day 19:00 - 22:00</span> -->
                                   <div class="margin-four"><img src="images/separator2.png" alt=""/></div>
@@ -608,7 +610,7 @@
                                       <!-- <div class="col-md-3 col-sm-2 col-xs-3 menu-img sm-display-block"><img src="http://placehold.it/180x180" alt="" class="round-border"/></div> -->
                                       <div class="col-md-8 col-sm-9 col-xs-7 col-xs-8 menu-text sm-width-80 xs-width-70">
                                           <div class="menu-text-sub">
-                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Nicaraguan Style Currasco</span>
+                                              <span class="text-uppercase brown-text letter-spacing-1 display-block font-weight-600 md-padding-one md-no-padding-lr md-no-padding-top">Nicaraguan Style Churrasco</span>
                                               <!-- <p class="display-block">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
                                           </div>
                                       </div>
@@ -838,19 +840,19 @@
             <div class="container">
                 <div class="row border-bottom padding-eight no-padding-lr">
                     <div class="col-md-8 col-sm-9 col-xs-12 text-left xs-text-center">
-                        <div class="footer-social position-relative top4">
+                        <!-- <div class="footer-social position-relative top4"> -->
                             <!-- social media link -->
-                            <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <!-- <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
                             <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
                             <a target="_blank" href="https://plus.google.com"><i class="fa fa-google-plus"></i></a>
                             <a target="_blank" href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
                             <a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-                            <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a> -->
                             <!-- end social media link -->
-                        </div>
+                        <!-- </div> -->
                     </div>
                     <div class="col-md-4 col-sm-3 col-xs-12 text-right xs-text-center xs-margin-nineteen xs-no-margin-lr xs-no-margin-bottom">
-                        <a href="#home" class="inner-link"><img alt="" src="images/logo-spa-footer.png"></a>
+                        <a href="#home" class="inner-link"><img alt="" src="http://i.imgur.com/FOMg9Gh.png"></a>
                     </div>
                 </div>
             </div>
@@ -858,7 +860,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 text-center">
-                            <span class="text-small text-uppercase letter-spacing-1 alt-font">&copy; 2015 Brando is proudly powered by <a href="http://www.themezaa.com/" target="_blank">ThemeZaa.</a></span>
+                            <!-- <span class="text-small text-uppercase letter-spacing-1 alt-font">&copy; 2015 Brando is proudly powered by <a href="http://www.themezaa.com/" target="_blank">ThemeZaa.</a></span> -->
                         </div>
                     </div>
                 </div>
