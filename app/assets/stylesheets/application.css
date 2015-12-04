@@ -18,3 +18,7 @@
   margin-bottom: 0px;
   z-index: 1000;
 }
+/*.field_with_errors {
+  border: 2px solid #a94442;
+  color: black;
+}*/
