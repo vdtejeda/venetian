@@ -59,7 +59,7 @@ video#vhall {
     background: url('https://i.imgur.com/fFftoEe.jpg') no-repeat;
     background-size: contain;
 }
-}
+
 
 @media screen and (max-device-width: 800px) {
     html {
