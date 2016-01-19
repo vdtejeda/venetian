@@ -25,6 +25,9 @@
 .crema {
   color: rgb(215, 181, 137);
 }
+.bg-crema {
+  background-color: #EBD1B1;
+}
 #menu-venetian, #menu-venetian:active {
   color: #5EB5FF;
 }
@@ -34,4 +37,35 @@
 }
 #service-link {
   border: 4px solid #e15276;
+}
+
+#hall_video {
+  padding-left: 0px;
+}
+
+video#vhall {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('https://i.imgur.com/fFftoEe.jpg') no-repeat;
+    background-size: contain;
+}
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url('https://i.imgur.com/fFftoEe.jpg') #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
 }

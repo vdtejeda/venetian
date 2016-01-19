@@ -16,7 +16,4 @@
 //= require_tree .
 
 $(document).on('ready page:load', function(event) {
-  setTimeout(function() {
-    $('#alert-override').slideUp();
-  }, 5000);
 });
