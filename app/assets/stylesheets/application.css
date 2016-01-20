@@ -61,11 +61,11 @@ video#vhall {
 }
 
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-width: 800px) {
     html {
          background: url('https://i.imgur.com/fFftoEe.jpg') #000 no-repeat center center fixed;
     }
-    #bgvid {
+    #vhall {
         display: none;
     }
 }
