@@ -47,9 +47,6 @@ html {
   border: 4px solid #e15276;
 }
 
-#hall_video {
-  padding-left: 0px;
-}
 
 video#vhall {
   display: none;
