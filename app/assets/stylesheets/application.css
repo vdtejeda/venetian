@@ -15,7 +15,7 @@
  */
 
 html {
-  background: url("https://i.imgur.com/LaGAzCJ.jpg");
+  background: url("https://i.imgur.com/LaGAzCJ.jpg") no-repeat center center fixed;
 }
 
 #alert-override {
