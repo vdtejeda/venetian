@@ -18,7 +18,7 @@ html {
   background: url("https://i.imgur.com/LaGAzCJ.jpg") no-repeat fixed;
 }
 
-#alert-override {
+.alert-override {
   margin-bottom: 0px;
   z-index: 1000;
 }

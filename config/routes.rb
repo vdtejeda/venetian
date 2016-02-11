@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'pages#home'
+
+  get   'gallery' => 'pages#gallery', as: :gallery
+
   post '/', to: 'messages#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -41,7 +41,7 @@
         <!-- navigation -->
         <nav class="navbar no-margin-bottom alt-font without-button">
           <% flash.each do |key, value| %>
-            <div class="alert alert-<%= key %>" id="alert-override">
+            <div class="alert alert-<%= key %> alert-override">
               <%= value %>
             </div>
           <% end %>
@@ -62,7 +62,7 @@
                             <li><a href="#home" class="inner-link">Home</a></li>
                             <li><a href="#service" class="inner-link">Services</a></li>
                             <li><a href="#menu" class="inner-link">Menu</a></li>
-                            <li><a href="#gallery" class="inner-link">Gallery</a></li>
+                            <li><a href="/gallery" class="inner-link">Gallery</a></li>
                             <li><a href="#location" class="inner-link">Location</a></li>
                             <li><a href="#contact" class="inner-link">Contact</a></li>
                         </ul>
@@ -70,6 +70,7 @@
                 </div>
             </div>
         </nav>
+
         <!-- end navigation -->
 
         <section id="home" class="no-padding">
@@ -400,116 +401,7 @@
               </div>
           </section>
           <!-- end menu section -->
-        <!-- gallery section -->
-        <section id="gallery" class="masonry work-3col gutter-wide wow  bg-crema">
-            <div class="container">
-              <div class="row padding-thirteen no-padding-lr no-padding-top">
-                  <div class="col-md-12 col-sm-12 text-center">
-                      <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">04</span></span>
-                      <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Gallery</span>
-                  </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12 grid-gallery grid-style6 overflow-hidden">
-                      <div class="tab-content">
-                          <ul class="masonry-items grid lightbox-gallery">
-                              <!-- gallery item -->
-                              <li>
-                                  <figure class="overflow-hidden">
-                                      <div class="gallery-img bg-dark-gray"><a href="http://i.imgur.com/mAiWeDT.jpg" title="Great for any event"><img src="http://i.imgur.com/mAiWeDT.jpg" alt=""></a></div>
-                                      <figcaption>
-                                          <h3 class="alt-font text-uppercase letter-spacing-2">Great for <br> any event</h3>
-                                      </figcaption>
-                                  </figure>
-                              </li>
-                              <!-- end gallery item -->
-                              <!-- gallery item -->
-                              <li>
-                                  <figure class="overflow-hidden">
-                                      <div class="gallery-img bg-dark-gray"><a href="http://i.imgur.com/FeFUEEb.jpg" title="Banquet Hall"><img src="http://i.imgur.com/FeFUEEb.jpg" alt=""></a></div>
-                                      <figcaption>
-                                          <h3 class="alt-font text-uppercase letter-spacing-2">Banquet<br> Hall</h3>
-                                      </figcaption>
-                                  </figure>
-                              </li>
-                              <!-- end gallery item -->
-                              <!-- gallery item -->
-                              <li>
-                                  <figure class="overflow-hidden">
-                                      <div class="gallery-img bg-dark-gray"><a href="http://i.imgur.com/Ef7Y0RL.jpg" title="Great for any event"><img src="http://i.imgur.com/Ef7Y0RL.jpg" alt=""></a></div>
-                                      <figcaption>
-                                          <h3 class="alt-font text-uppercase letter-spacing-2">Great for <br> any event</h3>
-                                      </figcaption>
-                                  </figure>
-                              </li>
-                              <!-- end gallery item -->
-                              <!-- gallery item -->
-                              <li>
-                                  <figure class="overflow-hidden">
-                                      <div class="gallery-img bg-dark-gray"><a href="http://i.imgur.com/WAaOwpD.jpg" title="Banquet Hall"><img src="http://i.imgur.com/WAaOwpD.jpg" alt=""></a></div>
-                                      <figcaption>
-                                          <h3 class="alt-font text-uppercase letter-spacing-2">Banquet<br> Hall</h3>
-                                      </figcaption>
-                                  </figure>
-                              </li>
-                              <!-- end gallery item -->
-                              <!-- gallery item -->
-                              <li>
-                                  <figure class="overflow-hidden">
-                                      <div class="gallery-img bg-dark-gray"><a href="http://i.imgur.com/1vNfAEy.jpg" title="Great for any event"><img src="http://i.imgur.com/1vNfAEy.jpg" alt=""></a></div>
-                                      <figcaption>
-                                          <h3 class="alt-font text-uppercase letter-spacing-2">Great for <br> any event</h3>
-                                      </figcaption>
-                                  </figure>
-                              </li>
-                              <!-- end gallery item -->
-                              <!-- gallery item -->
-                              <li>
-                                  <figure class="overflow-hidden">
-                                      <div class="gallery-img bg-dark-gray"><a href="http://i.imgur.com/GopNBxh.jpg" title="Banquet Hall"><img src="http://i.imgur.com/GopNBxh.jpg" alt=""></a></div>
-                                      <figcaption>
-                                          <h3 class="alt-font text-uppercase letter-spacing-2">Banquet<br> Hall</h3>
-                                      </figcaption>
-                                  </figure>
-                              </li>
-                              <!-- end gallery item -->
-                              <!-- gallery item -->
-                              <li>
-                                  <figure class="overflow-hidden">
-                                      <div class="gallery-img bg-dark-gray"><a href="http://i.imgur.com/BhCK0ju.png" title="Great for any event"><img src="http://i.imgur.com/BhCK0ju.png" alt=""></a></div>
-                                      <figcaption>
-                                          <h3 class="alt-font text-uppercase letter-spacing-2">Great for <br> any event</h3>
-                                      </figcaption>
-                                  </figure>
-                              </li>
-                              <!-- end gallery item -->
-                              <!-- gallery item -->
-                              <li>
-                                  <figure class="overflow-hidden">
-                                      <div class="gallery-img bg-dark-gray"><a href="http://i.imgur.com/Lofu0zI.png" title="Flowers"><img src="http://i.imgur.com/Lofu0zI.png" alt=""></a></div>
-                                      <figcaption>
-                                          <h3 class="alt-font text-uppercase letter-spacing-2">Flowers</h3>
-                                      </figcaption>
-                                  </figure>
-                              </li>
-                              <!-- end gallery item -->
-                              <!-- gallery item -->
-                              <li>
-                                  <figure class="overflow-hidden">
-                                      <div class="gallery-img bg-dark-gray"><a href="http://i.imgur.com/fJFJ2TW.png" title="Cake"><img src="http://i.imgur.com/fJFJ2TW.png" alt=""></a></div>
-                                      <figcaption>
-                                          <h3 class="alt-font text-uppercase letter-spacing-2">Cake</h3>
-                                      </figcaption>
-                                  </figure>
-                              </li>
-                              <!-- end gallery item -->
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-            </div>
-        </section>
-        <!-- end gallery section -->
+
         <!-- location section -->
             <section id="location" class="border-top no-padding-bottom wow  bg-crema">
                 <div class="container">
